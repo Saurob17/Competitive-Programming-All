@@ -1,0 +1,4 @@
+*.log       # সব .log ফাইল ignore করবে
+*.o         # সব কম্পাইল্ড .o ফাইল ignore করবে
+build/      # build ফোল্ডার সম্পূর্ণ ignore করবে
+.vscode/    # IDE ফোল্ডার ignore করবে
