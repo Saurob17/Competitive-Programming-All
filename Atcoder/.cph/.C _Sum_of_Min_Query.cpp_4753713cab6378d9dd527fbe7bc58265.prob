@@ -1,0 +1,1 @@
+{"name":"Local: C _Sum_of_Min_Query","url":"/home/kali/Competitive-Programming-All/Atcoder/C _Sum_of_Min_Query.cpp","tests":[{"id":1759643808359,"input":"4 3\n3 1 4 1\n2 7 1 8\nA 2 3\nB 3 3\nA 1 7\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/kali/Competitive-Programming-All/Atcoder/C _Sum_of_Min_Query.cpp","group":"local","local":true}

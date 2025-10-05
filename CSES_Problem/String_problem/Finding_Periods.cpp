@@ -62,7 +62,7 @@ using namespace std;
 typedef long long ll;
 
 const ll MOD1 = 1000000007;
-const ll MOD2 = 1000000009;
+const ll MOD2 = 1000000009;//
 const ll BASE = 911382323;
 
 vector<ll> pow1, pow2, h1, h2;
