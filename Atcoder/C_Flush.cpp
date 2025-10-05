@@ -15,7 +15,7 @@ int main() {
     sort(a.begin(), a.end());
 
     vector<ll> pref(n);//oyuuuuuuuuuuuuuuuuuuuuuuutty
-    pref[0] = a[0];
+    pref[0] = a[0];//dsfjskdhfksjdfkjkjds
     for (int i = 1; i < n; i++) pref[i] = pref[i - 1] + a[i];
 
     ll total = pref.back();
