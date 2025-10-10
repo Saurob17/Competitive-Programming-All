@@ -1,0 +1,1 @@
+{"name":"Local: MEXor_Mixup","url":"/home/kali/Competitive-Programming-All/codeforces/all_Problem/MEXor_Mixup.cpp","tests":[{"id":1759977495615,"input":"5\n1 1\n2 1\n2 0\n1 10000\n2 10000\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/kali/Competitive-Programming-All/codeforces/all_Problem/MEXor_Mixup.cpp","group":"local","local":true}

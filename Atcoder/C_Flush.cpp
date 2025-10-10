@@ -14,7 +14,7 @@ int main() {
 
     sort(a.begin(), a.end());
 
-    vector<ll> pref(n);//oyuuuuuuuuuuuuuuuuuuuuuuutty
+    vector<ll> pref(n);//oyuuuuuuuuuuuuuuuuuuuuuuu
     pref[0] = a[0];//dsfjskdhfksjdfkjkjds
 
     //ddslfk dskflsd kdsfjlkdsf 
@@ -27,7 +27,7 @@ int main() {
         cin >> b;
 
         ll val = b - 1;
-
+//hhhhhhhhhhhhhhhhhhhhhhhhh
         // lower_bound to find first index where A[i] >= b
         int idx = lower_bound(a.begin(), a.end(), b) - a.begin();
 
