@@ -16,9 +16,11 @@ int main() {
 
     vector<ll> pref(n);//oyuuuuuuuuuuuuuuuuuuuuuuutty
     pref[0] = a[0];//dsfjskdhfksjdfkjkjds
+
+    //ddslfk dskflsd kdsfjlkdsf 
     for (int i = 1; i < n; i++) pref[i] = pref[i - 1] + a[i];
 
-    ll total = pref.back();
+    ll total = pref.back();//sdfjlkds dfjdskf k  ksdl kdlsk lkdflds kdl
 
     while (q--) {
         ll b;
