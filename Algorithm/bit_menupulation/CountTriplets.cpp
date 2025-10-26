@@ -10,74 +10,36 @@ int counttriple(vector<int> &arr)
     for (int i = 1; i <= n; i++)
         prefixorx[i] = prefixorx[i - 1] ^ arr[i - 1];
 
-    map<int, int> mp;
+   vector<long long> m(1e4 + 1, LONG_LONG_MIN);
     int ans = 0;
 
     for (int i = 0; i <= n; i++)
     {
-        if (mp.count(prefixorx[i]))
+        cout<<prefixorx[i]<<" k "<<m[prefixorx[i]]<<" m "<<i<<"\n";
+        if(m[prefixorx[i]]!=LONG_LONG_MIN)
         {
-            ans += i - 1;
+            ans+= (i - m[prefixorx[i]] );
+          
         }
-        mp[prefixorx[i]] = i;
+        else{
+               m[prefixorx[i]] = i;
+        }
+     
     }
     return ans;
 }
 
 int main()
+
 {
-    map<char, int> brk;
-    int q;
-    cin >> q;
-    int siz = 0;  vector<char> st;
-    int cloIn=-1;
-    while (q--)
-    {
-      
-        int typ;
-        cin >> typ;
-        if (typ == 1)
-        {
-            char c;
-            cin >> c;
-            st.push_back(c);
-            brk[c]++;
-            siz++;
+int n;
+cin>>n;
+vector<int> arr(n);
+for(int i=0;i<n;i++)
+{
+    cin>>arr[i];
+}
+cout<<counttriple(arr);
 
-            if(brk[')']>brk['('] && cloIn==-1){
-                cloIn=siz;
-            }
 
-            if (brk[')'] == brk['('] && cloIn==-1)
-            {
-                cout << "Yes" << endl;
-            }
-            else
-            {
-                cout << "No" << endl;
-            }
-        }
-        else
-        {
-           
-            if(siz==0) {
-                cout<<"Yes"<<endl;
-                continue;
-            }
-            brk[st[siz- 1]]--;
-            siz--;
-            st.pop_back();
-            if(cloIn>siz){
-                cloIn=-1;
-            }
-            if (brk[')'] == brk['('] && cloIn==-1)
-            {
-                cout << "Yes" << endl;
-            }
-            else
-            {
-                cout << "No" << endl;
-            }
-        }
-    }
 }
