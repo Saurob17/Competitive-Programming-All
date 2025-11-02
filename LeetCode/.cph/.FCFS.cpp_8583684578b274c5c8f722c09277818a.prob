@@ -1,0 +1,1 @@
+{"name":"Local: FCFS","url":"/home/kali/Competitive-Programming-All/LeetCode/FCFS.cpp","tests":[{"id":1761469756778,"input":"3\n0 4\n1 3\n2 2","output":""},{"id":1761473034260,"input":"3\n0 1\n2 1\n5 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/kali/Competitive-Programming-All/LeetCode/FCFS.cpp","group":"local","local":true}
