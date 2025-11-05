@@ -25,12 +25,9 @@ void precompute()
 
     for (int n = 0; n <= 10; n++)
     {
-
         prefix[n][0] = 0;
-
         for (int i = 1; i < MAX; i++)
         {
-
             prefix[n][i] = prefix[n][i - 1] + (cnt[i] == n);
         }
     }
@@ -38,26 +35,19 @@ void precompute()
 
 int main()
 {
-
     ios::sync_with_stdio(false);
-
     cin.tie(nullptr);
-
     precompute();
-
     int T;
 
     cin >> T;
 
     while (T--)
     {
-
         int a, b, n;
-
         cin >> a >> b >> n;
-
         cout << (prefix[n][b] - prefix[n][a - 1]) << "\n";
     }
 
-    return 0;
+   
 }
