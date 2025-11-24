@@ -16,7 +16,7 @@ if(isset($_POST['submit'])) {
     $email = $_POST['email'];
     $pass = $_POST['password'];
     $confirm = $_POST['confirm'];
-
+505
     if($pass !== $confirm) {
         echo "<script>window.onload = function() {
             document.getElementById('confail').innerHTML = '*Password Not Matched!';
