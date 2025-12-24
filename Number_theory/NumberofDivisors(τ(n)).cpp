@@ -2,6 +2,17 @@
 using namespace std;
 using ll = long long;
 
+const int MAXN = 1e6 + 5;
+int divisors[MAXN];
+// 🔹 Function to precompute number of divisors for all numbers up to MAXN
+void precomputeDivisors() {
+    for (int i = 1; i < MAXN; i++) {
+        for (int j = i; j < MAXN; j += i) {
+            divisors[j]++;
+        }
+    }
+}
+
 // 🔹 Function: Number of Divisors
 ll numberOfDivisors(ll n) {
     ll ans = 1;

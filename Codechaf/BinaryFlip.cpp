@@ -1,31 +1,31 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    int t;
-    cin >> t;
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int t;
+//     cin >> t;
 
-    while (t--)
-    {
-        int n;
-        cin >> n;
-        string s;
-        cin >> s;
-        int flp00 = 0, flp11 = 0;
-        for (int i = 0; i < n - 1; i++)
-        {
-            if (s[i] == '0' && s[i + 1] == '0')
-                flp00++;
-            else if (s[i] == '1' && s[i + 1] == '1')
-                flp11++;
-        }
-int dif=flp00-flp11;
+//     while (t--)
+//     {
+//         int n;
+//         cin >> n;
+//         string s;
+//         cin >> s;
+//         int flp00 = 0, flp11 = 0;
+//         for (int i = 0; i < n - 1; i++)
+//         {
+//             if (s[i] == '0' && s[i + 1] == '0')
+//                 flp00++;
+//             else if (s[i] == '1' && s[i + 1] == '1')
+//                 flp11++;
+//         }
+// int dif=flp00-flp11;
 
-if(dif<=0){
-    cout<<0<<endl;
-}else{
-    cout<<(dif+1)/2<<endl;
-}
+// if(dif<=0){
+//     cout<<0<<endl;
+// }else{
+//     cout<<(dif+1)/2<<endl;
+// }
 
 
         // vector<int> flip0(n, 0);
@@ -59,5 +59,13 @@ if(dif<=0){
         // else
         // {
         // }
-    }
+//     }
+// }
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int d;
+    cin>>d;
+    cout<<" slkdf "<<d<<endl;
 }

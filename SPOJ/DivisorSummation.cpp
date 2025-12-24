@@ -1,10 +1,12 @@
+
+
 #include <bits/stdc++.h>
 using namespace std;
 using int128 = __int128_t;
-
+ 
 const int MAXP = 1e8 + 5;
 vector<int> primes;
-
+ 
 // Bitwise Sieve to generate all primes up to MAXP
 vector<bool> is_prime(MAXP, true);
 void sieve() {
@@ -16,19 +18,12 @@ void sieve() {
     }
     for (int i = 2; i < MAXP; i++) if (is_prime[i]) primes.push_back(i);
 }
-
+ 
 // Multiply carefully using __int128_t
-
-/*
-  σ(n) = (1 + p1 + p1^2 + ... + p1^a1)
-             * (1 + p2 + p2^2 + ... + p2^a2)
-             * ...
-             * (1 + pk + pk^2 + ... + pk^ak)
-*/
 int128 sum_of_divisors(__int128 n) {
     __int128 ans = 1;
     __int128 temp = n;
-
+ 
     for (int p : primes) {
         if (1LL * p * p > n) break;
         if (n % p == 0) {
@@ -45,7 +40,7 @@ int128 sum_of_divisors(__int128 n) {
     if (n > 1) ans *= (n + 1); // n itself is prime
     return ans - temp; // proper divisors sum
 }
-
+ 
 // Print __int128_t safely
 void print_int128(int128 x) {
     if (x == 0) { cout << 0 << "\n"; return; }
@@ -54,13 +49,13 @@ void print_int128(int128 x) {
     reverse(s.begin(), s.end());
     cout << s << "\n";
 }
-
+ 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+ 
     sieve(); // Precompute primes up to 1e8
-
+ 
     int T;
     cin >> T;
     while (T--) {
@@ -74,3 +69,4 @@ int main() {
         print_int128(sum_of_divisors(n));
     }
 }
+ 
