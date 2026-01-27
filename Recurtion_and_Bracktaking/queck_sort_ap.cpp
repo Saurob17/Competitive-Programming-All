@@ -27,8 +27,8 @@ void quickSort(int *arr, int start, int end)
 }
 int main()
 {
-
-    int a[] = {12, 24, 3, 44, 5};
+    
+    int a[] = {12, 24, 3, 44, 1};
     int n = 5;
     cout<<endl<<endl;
     quickSort(a, 0, n - 1);

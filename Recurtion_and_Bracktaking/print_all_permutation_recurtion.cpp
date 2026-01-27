@@ -20,7 +20,7 @@ void printPermutation(string str, int idx, string perm)
 }
 
 int main()
-{
+{ 
     string str = "abc";
     printPermutation(str, 0, ""); // Start the recursion with the full string and an empty permutation
 }

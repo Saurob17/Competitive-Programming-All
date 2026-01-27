@@ -17,6 +17,7 @@ bool check_possible(vector<vector<char>> &board, int row, int col, char c)
 }
 bool solve(vector<vector<char>> &board)
 {
+     
 
     for (int i = 0; i < board.size(); i++)
     {
@@ -34,7 +35,6 @@ bool solve(vector<vector<char>> &board)
                         else
                         {
                             board[i][j] = '.';
-                            
                         }
                     }
                 }
@@ -66,6 +66,9 @@ int main()
                 cout << board[i][j] << " ";
             cout << "\n";
         }
+    }
+    else{
+        cout<<"No solution";
     }
 
     return 0;

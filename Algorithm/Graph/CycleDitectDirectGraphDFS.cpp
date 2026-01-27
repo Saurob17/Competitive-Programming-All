@@ -26,7 +26,6 @@ bool isCycleDirectGraphDFS(int node, vector<vector<int>> &adj,
     path[node] = false;
     return false;
 }
-
 int main()
 {
     int node, edg;

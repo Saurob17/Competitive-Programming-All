@@ -14,7 +14,7 @@ void solve(vector<int> num, vector<int> output, int index, vector<vector<int>> &
     int element=num[index];
     output.push_back(element); 
     solve(num,output,index+1,ans);
-
+ 
 
 }
  
@@ -24,7 +24,6 @@ int main()
     vector<int> output;
     int index = 0;
     vector<int> v = {1, 2, 3};
-
     solve(v, output, index, ans);
     for(int i=0;i<ans.size();i++){
         for(int j=0;j<ans[i].size();j++){

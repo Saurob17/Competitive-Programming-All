@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// complexity  O(n)
 int Nth_factorial(int n)
 {
     if (n == 0)
