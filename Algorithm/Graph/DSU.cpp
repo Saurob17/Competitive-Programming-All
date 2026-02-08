@@ -22,6 +22,7 @@ void UnionByRank(int u, int v)
 {
     int ulp_u = findParent(u);
     int ulp_v = findParent(v);
+
     if (ulp_u == ulp_v)
         return;
 
@@ -40,6 +41,8 @@ void UnionByRank(int u, int v)
 
 int main()
 {
+     ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     makeSet(5);
     UnionByRank(2,3);
     UnionByRank(4,5);
