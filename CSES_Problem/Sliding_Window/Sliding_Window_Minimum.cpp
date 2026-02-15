@@ -18,6 +18,7 @@ int main() {
         v[i] = (v[i - 1] * a + b) % c;
     }
 
+
     deque<int> dq;
     vector<long long> ans;
 
@@ -25,7 +26,6 @@ int main() {
         // window এর বাইরে গেলে pop
         while (!dq.empty() && dq.front() <= i - k)
             dq.pop_front();
-
         // বড় element বাদ দিতে হবে back থেকে
         while (!dq.empty() && v[i] <= v[dq.back()])
             dq.pop_back();
