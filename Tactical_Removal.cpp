@@ -12,7 +12,7 @@ signed main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int T; 
+    int T;
     cin >> T;
 
     while(T--){
@@ -57,14 +57,15 @@ signed main(){
             else
                 sum += *os.find_by_order((os.size()-1)/2);
 
-            ans = max(ans, 
+            ans = max(ans,
                 2*sum - (m%2 ? *os.find_by_order(m/2) : 0)
             );
 
-            l++; 
+            l++;
             r++;
         }
 
         cout << ans << "\n";
     }
 }
+
