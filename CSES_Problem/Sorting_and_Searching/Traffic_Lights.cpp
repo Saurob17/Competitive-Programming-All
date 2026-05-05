@@ -2,14 +2,17 @@
 using namespace std;
 int main()
 {
+      ios::sync_with_stdio(false);
+    cin.tie(NULL);
+
     int n,m;
     cin >> n>>m;
     set<int> st;
-    multiset<int> ans;
+    multiset<int> len;
 
     st.insert(n);
     st.insert(0);
-    ans.insert(n);
+    len.insert(n);
 
 
     while (m--)
@@ -23,16 +26,13 @@ int main()
 
         auto ri = st.upper_bound(x);
         int dif = abs(*lf - *ri);
-        auto i=ans.find(dif);
-        if(i!=ans.end()){
-            ans.erase(i);
-        }
-     
+        auto i=len.find(dif);
+        len.erase(len.find(dif));
         //cout<<" dif "<<dif<<endl;
-        ans.insert(x-*lf);
-        ans.insert(*ri-x);
+        len.insert(x-*lf);
+        len.insert(*ri-x);
         
-        auto it=ans.end();
+        auto it=len.end();
         it--;
         cout<<*it<<" ";
     
